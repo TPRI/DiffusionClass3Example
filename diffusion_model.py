@@ -9,8 +9,11 @@ def energy(density, coeff=1.0):
       coeff: float
           Diffusion coefficient.
   """
+  
+  #Initialise e (before using  e +=)
   e = 0
   
+  #loop over all values in array
   for n in density:
     e += (coeff / 2) * n * (n + 1)
   return e
